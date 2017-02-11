@@ -36,6 +36,14 @@
                                                         "interface": "tun0"
                                                 }
                                         },
+					{
+                                                "function": "powerline.segments.common.net.internal_ip",
+                                                "args": {
+                                                        "ipv": "4",
+                                                        "interface": "eno1"
+                                                }
+                                        },
+
  
 
 
