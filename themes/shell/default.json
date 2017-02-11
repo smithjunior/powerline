@@ -5,7 +5,10 @@
 				"left": [
 					{
 						"function": "powerline.segments.common.net.hostname",
-						"priority": 10
+						"priority": 10,
+						"args":{
+							"only_if_ssh":false
+						}
 					},
 
 					{
@@ -16,9 +19,26 @@
 						"function": "powerline.segments.common.net.internal_ip",
 						"args": {
 							"ipv": "4",
-							"interface": "auto"
+							"interface": "enp1s0"
 						}
 					},
+					{ 
+                                                "function": "powerline.segments.common.net.internal_ip",
+                                                "args": {
+                                                        "ipv": "4",
+                                                        "interface": "wlp2s0"
+                                                }
+                                        },
+					 {
+                                                "function": "powerline.segments.common.net.internal_ip",
+                                                "args": {
+                                                        "ipv": "4",
+                                                        "interface": "tun0"
+                                                }
+                                        },
+ 
+
+
 					{
 						"function": "powerline.segments.shell.cwd",
 						"priority": 10
